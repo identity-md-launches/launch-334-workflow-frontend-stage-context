@@ -1,0 +1,22 @@
+{
+  "kind": "evm_project",
+  "token": {
+    "contract": "LaunchToken",
+    "name": "Circle",
+    "symbol": "CIRC",
+    "decimals": 18
+  },
+  "contracts": [
+    {
+      "contract": "SavingsCircle",
+      "constructorArgs": ["$token"]
+    }
+  ],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "notes": "Intended for Sepolia. Deploy src/LaunchToken.sol:LaunchToken with no constructor arguments, then src/SavingsCircle.sol:SavingsCircle with the deployed CIRC address. SavingsCircle stores that address immutably, requires no initial CIRC balance, and has no owner or initialization calls. Members obtain CIRC through the factory-seeded native ETH pool; application bonds, contributions and withdrawals use CIRC. The pool has no hook. initialPrice is decimal sqrtPriceX96; services derive the effective opening price from policy when configured. Policy and signed artifact linkage belong to services. The default-profit counterexamples involving carry and the all-default fallback documented in docs/REVIEW.md remain unresolved review findings. This manifest does not constitute deployment approval."
+}
