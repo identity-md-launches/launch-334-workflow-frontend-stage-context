@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-09-27T06:33:31.748Z",
+  "chainId": 11155111,
+  "sourceCommit": "232defab803dc69173ea1f3007bd624adc259247",
+  "latest": {
+    "number": "11791563",
+    "hash": "0x0bb920a65502410023388e1bf89d111737f362c1f13b9a1ce7be0347f733ea23"
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "address": "0x86241a289dd98beb222d4770eea740cbd46a9145",
+      "pinnedBlock": {
+        "number": "11791319",
+        "hash": "0xad2fd0b6f27c31987409f66ff60ecf4f8dc070a40000d02cf8b5ecb51ce35eef"
+      },
+      "pinnedCodeBytes": 1722,
+      "latestCodeBytes": 1722,
+      "views": {
+        "decimals": "18",
+        "symbol": "CIRC",
+        "totalSupply": "1000000000000000000000000000"
+      }
+    },
+    {
+      "name": "SavingsCircle",
+      "address": "0xa3c346f88bb9e128258ef35817df5a52acd9c74f",
+      "pinnedBlock": {
+        "number": "11791319",
+        "hash": "0xad2fd0b6f27c31987409f66ff60ecf4f8dc070a40000d02cf8b5ecb51ce35eef"
+      },
+      "pinnedCodeBytes": 6526,
+      "latestCodeBytes": 6526,
+      "views": {
+        "token": "0x86241a289dD98Beb222d4770EEa740CbD46a9145",
+        "circleCount": "0",
+        "accountedBalance": "0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "width": 1440,
+  "scrollWidth": 1440,
+  "status": "Live snapshot · block 11791625 · Sep 27, 2026, 6:45 AM",
+  "errors": [],
+  "configurationURLs": [
+    "http://127.0.0.1:4174/ipfs/circle/imd-deployment.json",
+    "http://127.0.0.1:4174/ipfs/circle/abi/LaunchToken.json",
+    "http://127.0.0.1:4174/ipfs/circle/abi/SavingsCircle.json"
+  ]
+}

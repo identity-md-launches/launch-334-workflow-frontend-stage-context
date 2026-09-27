@@ -1,0 +1,20 @@
+{
+  "exportAssetCount": 7,
+  "exportBytesIncludingManifest": 570828,
+  "largestExportFileBytes": 532409,
+  "allExportHashesVerified": true,
+  "handoffAndNetworkMatch": true,
+  "onlyAllowedDeliveryPaths": true,
+  "generatedDependenciesExcluded": true,
+  "protectedFilesUnchanged": true,
+  "gitSubmodules": 0,
+  "ignoreFile": {
+    "path": "web/.gitignore",
+    "bytes": 261,
+    "budgetBytes": 1024
+  },
+  "completeSelfContainedGitBundleUpperBoundBytes": 2097152,
+  "assignmentGitBundleLimitBytes": 8388608,
+  "rootGitCommitBlockedByReadOnlyMount": true,
+  "bundleCheckMethod": "Temporary bare Git snapshot of original source history plus all permitted deliverables; no bundle or dependency archive is delivered."
+}

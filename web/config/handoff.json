@@ -1,0 +1,51 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-248-savingscircle",
+  "version": 1,
+  "launchId": "832f7a44-cde0-4cf2-be94-8b3a9f565d98",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Intended for Sepolia. Deploy src/LaunchToken.sol:LaunchToken with no constructor arguments, then src/SavingsCircle.sol:SavingsCircle with the deployed CIRC address. SavingsCircle stores that address immutably, requires no initial CIRC balance, and has no owner or initialization calls. Members obtain CIRC through the factory-seeded native ETH pool; application bonds, contributions and withdrawals use CIRC. The pool has no hook. initialPrice is decimal sqrtPriceX96; services derive the effective opening price from policy when configured. Policy and signed artifact linkage belong to services. The default-profit counterexamples involving carry and the all-default fallback documented in docs/REVIEW.md remain unresolved review findings. This manifest does not constitute deployment approval.",
+    "token": {
+      "name": "Circle",
+      "symbol": "CIRC",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "SavingsCircle",
+        "constructorArgs": [
+          "$token"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x88e29c4a85fdc94e2a4097009de8de5465dd5568d1d2f20999196fa137eaf827",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0x86241a289dd98beb222d4770eea740cbd46a9145",
+      "blockNumber": 11791319,
+      "creationCodeHash": "50c9f490f278368828bdf2321b12b5322f138e841a4afb15f6bc826f6522fe47"
+    },
+    {
+      "name": "SavingsCircle",
+      "txHash": "0x88e29c4a85fdc94e2a4097009de8de5465dd5568d1d2f20999196fa137eaf827",
+      "abiHash": "e5796df3fa0d05e97ec297168decdbb17858d2a8cd7b2117b24f53df540b7bec",
+      "address": "0xa3c346f88bb9e128258ef35817df5a52acd9c74f",
+      "blockNumber": 11791319,
+      "creationCodeHash": "4d2adfca26259cd1e0cc716eb1fee825b44fd85f5f6bd3f1b1f5b7e52f1ef5cb"
+    }
+  ],
+  "sourceCommit": "232defab803dc69173ea1f3007bd624adc259247",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "c5b469cf6a40b61814390ebc026bd7f3f875775824cd172d8bfe7a081f1cfa6c"
+}

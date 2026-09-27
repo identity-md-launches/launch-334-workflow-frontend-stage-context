@@ -1,0 +1,22 @@
+Running 16 tests using 1 worker
+
+(node:12) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 web/tests/app.spec.ts:32:1 › disconnected and missing wallet (1.7s)
+  ✓   2 web/tests/app.spec.ts:39:1 › rejected connection can be retried (1.4s)
+  ✓   3 web/tests/app.spec.ts:49:1 › wrong chain offers add chain with the exact handoff parameters, then switches (1.5s)
+  ✓   4 web/tests/app.spec.ts:60:1 › approve exact bond before create; refresh balances and show receipt (2.6s)
+  ✓   5 web/tests/app.spec.ts:74:1 › join approves the exact bond and prevents duplicate membership (3.8s)
+  ✓   6 web/tests/app.spec.ts:86:1 › contribute once, close the next ended round, and withdraw (4.4s)
+  ✓   7 web/tests/app.spec.ts:102:1 › expired recruitment permits cancellation and blocks joining at the exact boundary (2.7s)
+  ✓   8 web/tests/app.spec.ts:111:1 › default, nonmember, early closure and ended windows prevent contribution (2.6s)
+  ✓   9 web/tests/app.spec.ts:127:1 › simulation revert, wallet rejection and reverted receipt remain actionable errors (2.7s)
+  ✓  10 web/tests/app.spec.ts:143:1 › amount precision, balance and account/network changes block unsafe writes (1.7s)
+  ✓  11 web/tests/app.spec.ts:158:1 › fail closed on absent contract code or an RPC chain mismatch (1.2s)
+  ✓  12 web/tests/app.spec.ts:167:1 › ABI tampering blocks deployment loading (908ms)
+  ✓  13 web/tests/app.spec.ts:175:1 › pagination and direct circle lookup use contract IDs (2.6s)
+  ✓  14 web/tests/app.spec.ts:189:1 › RPC outage disables writes and refresh recovers the empty state (2.2s)
+  ✓  15 web/tests/app.spec.ts:200:1 › rejected network switch does not add a chain and account removal disables writes (1.3s)
+  ✓  16 web/tests/app.spec.ts:211:1 › desktop/mobile accessibility, keyboard, layout, contrast and screenshots (6.9s)
+
+  16 passed (44.2s)

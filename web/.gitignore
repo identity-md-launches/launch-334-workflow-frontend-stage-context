@@ -1,0 +1,12 @@
+# Explicit allowance: web/.gitignore only; budget <1 KiB.
+# Match generated dependencies and caches at every depth within web/.
+node_modules/
+.vite/
+.cache/
+.npm/
+.pnpm-store/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+/public/imd-deployment.json

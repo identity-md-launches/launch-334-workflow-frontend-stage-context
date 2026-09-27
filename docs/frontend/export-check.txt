@@ -1,0 +1,4 @@
+> circle-frontend@1.0.0 verify:export
+> node scripts/export.mjs --verify
+
+Verified dist/imd-deployment.json: 7 assets, both pinned ABI hashes match.
